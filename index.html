@@ -7,7 +7,9 @@
     <title>YouTube Clone</title>
 
     <!-- CSS Styles -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
 
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,22 +17,128 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <input class="search-bar" type="search" placeholder="Search">
-
-    <div class="video-preview">
-        <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="">
-        <p class="video-title">How The World's Largest Cruise Ship Makes 30,000 Meals Every Day</p>
-        <p class="video-author">Business Insider</p>
-        <p class="video-stats">14M views &#183; 1 year ago</p>
+    <!-- HEADER -->
+    <div class="header">
+        <div class="left-section">
+            <img class="icon" src="images/icons/hamburger-menu.svg">
+            <img class="logo" src="images/youtube-logo.svg" alt="youtube logo">
+        </div>
+        <div class="middle-section">
+            <input class="search-bar" type="search" placeholder="Search">
+            <button class="search-button">
+                <img class="icon" src="images/icons/search.svg">
+            </button>
+            <button class="voice-search-button">
+                <img class="icon" src="images/icons/voice-search-icon.svg">
+            </button>
+        </div>
+        <div class="right-section">
+            right
+        </div>
     </div>
 
-    <div class="video-preview">
-        <img class="thumbnail" src="thumbnails/thumbnail-8.webp" alt="">
-        <p class="video-title">Inside The World's Biggest Passenger Plane</p>
-        <p class="video-author">Tech Vision</p>
-        <p class="video-stats">3.7M views &#183; 10 months ago</p>
+    <!-- SIDEBAR -->
+
+    <!-- MAIN CONTENT -->
+    <div class="video-grid">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/thumbnails/thumbnail-1.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="images/profile-pictures/channel-1.jpeg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">What would happen if you didn't drink water? - Mia Nacamulli</p>
+                    <p class="video-author">TED-Ed</p>
+                    <p class="video-stats">12M views &#183; 5 years ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/thumbnails/thumbnail-2.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="images/profile-pictures/channel-2.jpeg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">How The World's Largest Cruise Ship Makes 30,000 Meals Every Day</p>
+                    <p class="video-author">Business Insider</p>
+                    <p class="video-stats">14M views &#183; 1 year ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/thumbnails/thumbnail-3.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="images/profile-pictures/channel-3.jpeg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Dubai's Crazy Underwater Train and Other Things #Only in Dubai</p>
+                    <p class="video-author">Destination Tips</p>
+                    <p class="video-stats">3M views &#183; 1 year ago</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/thumbnails/thumbnail-4.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="images/profile-pictures/channel-4.jpeg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">DOG GETS BOUNCE HOUSE FOR FOURTH BIRTHDAY</p>
+                    <p class="video-author">TmarTn2</p>
+                    <p class="video-stats">3.6M views &#183; 4 years ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/thumbnails/thumbnail-5.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="images/profile-pictures/channel-5.jpeg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                    <p class="video-author">Marques Brownlee</p>
+                    <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/thumbnails/thumbnail-8.webp">
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="images/profile-pictures/channel-8.jpeg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Inside The World's Biggest Passenger Plane</p>
+                    <p class="video-author">Tech Vision</p>
+                    <p class="video-stats">3.7M views &#183; 10 months ago</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    
+    <!-- FOOTER -->
 </body>
 </html>
