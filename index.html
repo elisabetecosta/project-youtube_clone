@@ -9,7 +9,9 @@
     <!-- CSS Styles -->
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/media-queries.css">
 
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,9 +22,10 @@
     <!-- HEADER -->
     <div class="header">
         <div class="left-section">
-            <img class="icon" src="images/icons/hamburger-menu.svg">
+            <img class="icon hamburger-icon" src="images/icons/hamburger-menu.svg">
             <img class="logo" src="images/youtube-logo.svg" alt="youtube logo">
         </div>
+
         <div class="middle-section">
             <input class="search-bar" type="search" placeholder="Search">
             <button class="search-button">
@@ -32,18 +35,52 @@
                 <img class="icon" src="images/icons/voice-search-icon.svg">
             </button>
         </div>
+
         <div class="right-section">
-            right
+            <img class="icon" src="images/icons/upload.svg">
+            <img class="icon" src="images/icons/youtube-apps.svg">
+            <div class="notifications-icon-container">
+                <img class="icon" src="images/icons/notifications.svg">
+                <div class="notifications-counter">3</div>
+            </div>
+            <img class="current-user" src="images/profile-picture.jpeg">
         </div>
     </div>
 
     <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="sidebar-link">
+            <img class="icon" src="images/icons/home.svg">
+            <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+            <img class="icon" src="images/icons/explore.svg">
+            <div>Explore</div>
+        </div>
+        <div class="sidebar-link">
+            <img class="icon" src="images/icons/subscriptions.svg">
+            <div>Subscriptions</div>
+        </div>
+        <div class="sidebar-link">
+            <img class="icon" src="images/icons/originals.svg">
+            <div>Originals</div>
+        </div>
+        <div class="sidebar-link">
+            <img class="icon" src="images/icons/youtube-music.svg">
+            <div>YouTube Music</div>
+        </div>
+        <div class="sidebar-link">
+            <img class="icon" src="images/icons/library.svg">
+            <div>Library</div>
+        </div>
+    </div>
 
     <!-- MAIN CONTENT -->
     <div class="video-grid">
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="images/thumbnails/thumbnail-1.webp">
+                <div class="video-time">4:51</div>
             </div>
             <div class="video-info-grid">
                 <div class="channel-picture">
@@ -60,6 +97,7 @@
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="images/thumbnails/thumbnail-2.webp">
+                <div class="video-time">7:53</div>
             </div>
             <div class="video-info-grid">
                 <div class="channel-picture">
@@ -76,6 +114,7 @@
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="images/thumbnails/thumbnail-3.webp">
+                <div class="video-time">4:10</div>
             </div>
             <div class="video-info-grid">
                 <div class="channel-picture">
@@ -92,6 +131,7 @@
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="images/thumbnails/thumbnail-4.webp">
+                <div class="video-time">21:46</div>
             </div>
             <div class="video-info-grid">
                 <div class="channel-picture">
@@ -108,6 +148,7 @@
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="images/thumbnails/thumbnail-5.webp">
+                <div class="video-time">14:20</div>
             </div>
             <div class="video-info-grid">
                 <div class="channel-picture">
@@ -120,10 +161,45 @@
                 </div>
             </div>
         </div>
+
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/thumbnails/thumbnail-6.webp">
+                <div class="video-time">19:59</div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="images/profile-pictures/channel-6.jpeg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Anything You Can Fit In The Circle I'll Pay For</p>
+                    <p class="video-author">MrBeast</p>
+                    <p class="video-stats">141M views &#183; 1 year ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/thumbnails/thumbnail-7.webp">
+                <div class="video-time">5:31</div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="images/profile-pictures/channel-7.jpeg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Coding Interviews Be Like</p>
+                    <p class="video-author">Nicholas T.</p>
+                    <p class="video-stats">4.6M views &#183; 1 year ago</p>
+                </div>
+            </div>
+        </div>
         
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="images/thumbnails/thumbnail-8.webp">
+                <div class="video-time">7:12</div>
             </div>
             <div class="video-info-grid">
                 <div class="channel-picture">
@@ -137,8 +213,73 @@
             </div>
         </div>
 
-    </div>
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/thumbnails/thumbnail-9.webp">
+                <div class="video-time">51:31</div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="images/profile-pictures/channel-9.jpeg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">The Captain That Got Stuck Outside Of The Plane!</p>
+                    <p class="video-author">Mayday: Air Disaster</p>
+                    <p class="video-stats">1.4M views &#183; 1 year ago</p>
+                </div>
+            </div>
+        </div>
 
-    <!-- FOOTER -->
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/thumbnails/thumbnail-10.webp">
+                <div class="video-time">10:13</div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="images/profile-pictures/channel-10.jpeg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Why Planes Don't Fly Over Tibet</p>
+                    <p class="video-author">RealLifeLore</p>
+                    <p class="video-stats">6.6M views &#183; 2 years ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/thumbnails/thumbnail-11.webp">
+                <div class="video-time">34:29</div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="images/profile-pictures/channel-11.jpeg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Politically Incorrect Doctors. Danny Johnson - Full Special</p>
+                    <p class="video-author">Dry Bar Comedy</p>
+                    <p class="video-stats">1M views &#183; 2 years ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/thumbnails/thumbnail-12.webp">
+                <div class="video-time">14:14</div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="images/profile-pictures/channel-12.jpeg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">I Rented a Raccoon to Simulate Having a Child</p>
+                    <p class="video-author">William Osman</p>
+                    <p class="video-stats">3.4M views &#183; 4 weeks ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

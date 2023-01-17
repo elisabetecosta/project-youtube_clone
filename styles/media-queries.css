@@ -1,0 +1,70 @@
+/* ========== MEDIA QUERIES FOR RESPONSIVENESS ========== */
+/* Typical Device Breakpoints
+Small screens: 600px and down
+Phone: 600px - 768px
+Tablet: 768px - 992px
+Desktop: 992px - 1200px
+Large screens: 1200px and up
+*/
+
+/* SMALL SCREENS */
+@media screen and (max-width: 600px) {
+    
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Makes header more responsive for smaller screens */
+
+    .left-section {
+        width: 100px;
+    }
+
+    .middle-section {
+        flex-grow: 0;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .search-button {
+        background-color: var(--button-color);
+        height: 40px;
+        width: 40px;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .voice-search-button {
+        margin-right: -40px;
+    }
+
+    .right-section {
+        width: 140px;
+    }
+}
+
+/* PHONE */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* DESKTOP & TV */
+@media screen and (min-width: 992px) {
+    
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
