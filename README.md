@@ -18,6 +18,5 @@ You can view this project [here](https://elisabetecosta.github.io/youtube-clone/
 
 
 ## TO DO
-- [ ] Add JavaScript functionality to header and sidebar
-- [ ] Improve responsiveness for smaller screens
+- [ ] Add JavaScript functionality to header and sidebar??
 - [ ] ...
