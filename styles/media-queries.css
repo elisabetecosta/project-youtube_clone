@@ -7,14 +7,47 @@ Desktop: 992px - 1200px
 Large screens: 1200px and up
 */
 
-/* SMALL SCREENS */
+
+/* HIDES THE VOICE SEARCH BUTTON ON VERY SMALL SCREENS */
+@media screen and (max-width: 335px) {
+
+    .voice-search-button {
+        display: none;
+    }
+}
+
+/* HIDES ALL ICONS FROM THE RIGHT SECTION ON SMALLER SCREENS */
+@media screen and (max-width: 540px) {
+
+    .right-section .icon,
+    .notifications-counter {
+        display: none;
+    }
+
+    .right-section {
+        justify-content: center;
+        width: 0;
+    }
+}
+
+/* SHOWS 1 VIDEO PREVIEW PER ROW */
 @media screen and (max-width: 600px) {
     
     .video-grid {
         grid-template-columns: 1fr;
-    }
+    }   
+}
 
-    /* Makes header more responsive for smaller screens */
+/* SHOWS 2 VIDEO PREVIEWS PER ROW */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* HIDES SEARCH BAR ON SMALLER SCREENS */
+@media screen and (max-width: 656px) {
 
     .left-section {
         width: 100px;
@@ -22,7 +55,7 @@ Large screens: 1200px and up
 
     .middle-section {
         flex-grow: 0;
-    }
+    } 
 
     .search-bar {
         display: none;
@@ -36,24 +69,12 @@ Large screens: 1200px and up
         border-radius: 4px;
     }
 
-    .voice-search-button {
-        margin-right: -40px;
-    }
-
     .right-section {
-        width: 140px;
+        width: 140;
     }
 }
 
-/* PHONE */
-@media screen and (min-width: 600px) and (max-width: 768px) {
-    
-    .video-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-/* TABLET */
+/* SHOWS 3 VIDEO PREVIEWS PER ROW */
 @media screen and (min-width: 768px) and (max-width: 992px) {
     
     .video-grid {
@@ -61,7 +82,7 @@ Large screens: 1200px and up
     }
 }
 
-/* DESKTOP & TV */
+/* SHOWS 4 VIDEO PREVIEWS PER ROW */
 @media screen and (min-width: 992px) {
     
     .video-grid {
