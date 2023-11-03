@@ -1,10 +1,10 @@
 # YouTube Clone
 
-Pure HTML AND CSS project that I built while learning/practicing concepts like flexbox, grid, position relative/absolute, fixed header and sidebar, and much more.
+Pure HTML and CSS project that I built while learning/practicing concepts like flexbox, grid, position relative/absolute, fixed header and sidebar, and much more.
 
 Just like the name says, this is a YouTube clone, so there is a header and sidebar similar to what you would find on YouTube and a grid of 12 video previews with thumbnails and video info.
 
-You can view this project [here](https://elisabetecosta.github.io/youtube-clone/)
+You can view the result [here](https://elisabetecosta.github.io/youtube-clone/)
 
 
 ## Technologies
@@ -15,8 +15,3 @@ You can view this project [here](https://elisabetecosta.github.io/youtube-clone/
 
 ## Authors
 - [@elisabetecosta](https://github.com/elisabetecosta)
-
-
-## TO DO
-- [ ] Add JavaScript functionality to header and sidebar??
-- [ ] ...
